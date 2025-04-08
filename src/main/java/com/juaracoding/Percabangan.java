@@ -29,7 +29,7 @@ public class Percabangan {
             System.out.println("Username atau password salah");
         }
 
-        if (isLogin == true){
+        if (isLogin){
             //otp
             Random otp = new Random();
             System.out.printf("%04d%n", otp.nextInt(9999));
