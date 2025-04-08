@@ -7,15 +7,22 @@ public class Percabangan {
 
     public static void main(String[] args) {
 
+        String username;
+        String password;
+        Scanner uscanner = new Scanner(System.in);
+        Scanner pscanner = new Scanner(System.in);
         boolean isLogin;
-        String username = "yngwie";
-        String password = "root";
-        isLogin = false;
+
 
 
         //simple login
-        System.out.println("username");
-        if (username.equals("yngwie") && password == "root") {
+
+        System.out.print("username: ");
+        username = uscanner.nextLine();
+        System.out.print("password: ");
+        password = pscanner.nextLine();
+        isLogin = false;
+        if (username.equals("yngwie") && password.equals("root")) {
             isLogin = true;
             System.out.println("Login berhasil");
         } else {
